@@ -73,7 +73,8 @@ def main():
         cv2_im[:, :, :] = 0
         cv2_im = append_objs_to_img(cv2_im, inference_size, objs, labels)
 
-        cv2.namedWindow("frame",cv2.WINDOW_FULLSCREEN)
+        cv2.namedWindow("frame", cv2.WND_PROP_FULLSCREEN)
+        cv2.setWindowProperty("frame",cv2.WND_PROP_FULLSCREEN,cv2.WINDOW_FULLSCREEN)
         cv2.imshow('frame', cv2_im)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
