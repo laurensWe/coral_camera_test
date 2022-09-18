@@ -1,3 +1,5 @@
+# TODO: link naar de blogpost van het RIG
+
 # Edge TPU simple camera examples
 
 This repo contains a collection of examples that use camera streams
